@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UAV-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>the klosét</title>
+    <!--Link TO CSS--> 
+    <link rel="stylesheet" href="style.css">
+    <!--Box Icons-->
+    <link rel="stylesheet" 
+    href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+</head>
+<body>
+    <!--Navbar-->
+    <header>
+        <!--Menu-Icon-->
+        <i class='bx bx-menu' id="menu-icon"></i>
+        <!--Links-->
+        <h1 style=" position: fixed;width: 100%; top: 0; right: 0;z-index: 1000;display: flex;justify-content: space-between;align-items: center;padding: 18px 100px;transition: 0.5s linear;background: var(--text-color);box-shadow: var(--box-shadow);">
+       <ul class="navbar">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html">About Us</a></li>
+            <li><a href="index.html">Shop</a></li>
+            <li><a href="index.html">Customers</a></li>
+       </ul>  
+       <!--Icon-->
+       <div class="header-icon">
+          <a href="cart.html"><i class='bx bx-cart-alt' ></i></a>
+          <i class='bx bx-search' id="search-icon"></i>
+       </div>
+       <!--Search Box-->
+       <div class="search-box">
+     <input type="search" name="" id="" placeholder="Search Here...">
+       </div>
+    </header>
+    <!-- Cart Section -->
+    <section class="cart">
+        <div class="heading">
+            <h1>Your Cart</h1>
+        </div>
+
+        <div class="cart-items-container">
+            <!-- Cart items will be dynamically inserted here -->
+            <p class="empty-cart-message">Your cart is empty.</p>
+        </div>
+
+        <div class="cart-summary">
+            <h3>Total: <span id="cart-total">$0.00</span></h3>
+            <button class="checkout-btn">Proceed to Checkout</button>
+        </div>
+    </section>
+
+    <!-- Link to JavaScript -->
+    <script src="cart-show.js"></script>
+</body>
+</html>
